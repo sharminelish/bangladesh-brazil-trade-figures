@@ -1,0 +1,17 @@
+# R
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Data downloads and generated figures
+data/*.csv
+data/*.xlsx
+data/*.geojson
+output/*
+!output/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
