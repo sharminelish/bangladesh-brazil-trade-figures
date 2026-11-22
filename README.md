@@ -26,14 +26,12 @@ bangladesh-brazil-trade-figures/
 
 ## Requirements
 
-R 4.3 or later. Install the packages once:
-
-```r
-install.packages(c("data.table", "readxl", "sf", "ggplot2", "ggrepel",
+install. packages(c("data.table", "readxl", "sf", "ggplot2", "ggrepel",
                    "ragg", "systemfonts", "scales"))
-# optional: install.packages("geobr")  # otherwise the map script downloads an open
-#                                        # Brazil states GeoJSON automatically
-```
+
+# Optional: install. packages("geobr")
+# Not required, and it may not install on some R versions. Without it, the map
+# script downloads an open Brazil states GeoJSON (about 3 MB) into data/ automatically.
 
 ## How to run
 
@@ -61,7 +59,7 @@ source("R/map_brazil_states_bangladesh.R")
 
 Bubbles are placed with a small force layout so they do not overlap. State-level figures show where the importer is registered. That reflects state import-tax incentives and port access as well as final consumption.
 
-**Tariff comparison.** These are author's estimates. Each supplier's imports by HS chapter (UN Comtrade, 2025; Argentina–Vietnam 2024) are weighted by the importer's 2025 MFN simple average for each WTO product group (WTO Tariff Profiles). "All suppliers" is the importer's overall trade-weighted MFN average reported by the WTO. India's figure excludes India–MERCOSUR PTA preferences. Trade remedies such as anti-dumping duties are not included.
+**Tariff comparison.** These are the author's estimates. Each supplier's imports by HS chapter (UN Comtrade, 2025; Argentina–Vietnam 2024) are weighted by the importer's 2025 MFN simple average for each WTO product group (WTO Tariff Profiles). "All suppliers" is the importer's overall trade-weighted MFN average reported by the WTO. India's figure excludes India–MERCOSUR PTA preferences. Trade remedies such as anti-dumping duties are not included.
 
 ## Sources
 
